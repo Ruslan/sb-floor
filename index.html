@@ -2,7 +2,12 @@
 <html lang="ru">
 <head>
 <meta charset="utf-8">
-<meta name="robots" content="noindex, nofollow">
+<!-- noindex адресно поисковикам, а не общим robots: TelegramBot общий noindex уважает и молча
+     не строит превью ссылки (22.10.2026: превью нет, robots.txt и заголовки чистые; про noindex —
+     opengraphplus.com, официально Telegram это не документирует) -->
+<meta name="googlebot" content="noindex, nofollow">
+<meta name="bingbot" content="noindex, nofollow">
+<meta name="yandex" content="noindex, nofollow">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Дно Server Börse</title>
 <meta name="description" content="Минимальные цены аукциона Hetzner Server Börse деревом «процессор → память → диски»: 15 451 лотов с 31.08.2026, срез 21.10.2026.">
